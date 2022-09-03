@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The Wardanan's Wedding</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+
+    <div class="container text-center">
+        <div class="row konten-utama">
+            
+          <div class="col-sm-12 col-md-7 invitation-bg position-relative">
+            <img class="position-absolute top-0 start-0 flower1" src="/img/bunga1.png">
+            <img class="position-absolute bottom-0 end-0 flower1" src="/img/bunga2.png">
+            <!-- Invitation Content -->
+            <div class="row invitation-wrapper align-items-center">
+                <div class="col">
+                    <h6 class="pb-3">NOTHING FANCY BUT LOVE</h6>
+                    <h1>Hami Kukuh Wardanan</h1>
+                    <h1>&</h1>
+                    <h1 class="pb-3">Arlinda Juwitasari</h1>
+                    <span class="pt-3">warmly invite you to be a part of our private wedding celebration</span>
+                    <!--Calendar-->
+                    <div class="row align-items-center pt-3 pb-3">
+                        <div class="col">
+                            <div class="row text-end">
+                                <span class="font-bold">FRIDAY</span>
+                                <span>16:00PM</span>
+                            </div>
+                        </div>
+                        <div class="col date-style">
+                            <Span class="">21</Span>
+                        </div>
+                        <div class="col">
+                            <div class="row text-start">
+                                <span class="font-bold">OCTOBER</span>
+                                <span>2022</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Location-->
+                    <h6>TAMAN INDIE RESTO - BALAI JANUR</h6>
+                    <span class="alamat"><i class="fa fa-map-marker px-2"></i>Jl. Araya Megah No.9, Pandanwangi, Kec. Blimbing, Kota Malang, Jawa Timur</span>
+
+                    <!--terms-->
+                    <div class="container-sm terms-container">
+                        <div class="row align-items-center pb-3">
+                            <div class="col terms-icon-container">
+                                <img src="img/piggy.svg" width="24px" height="24px" alt="no piggy" />
+                            </div>
+                            <div class="col">
+                                do not feel obligate to bring any gifts to our wedding, your presence itself is already a gift for us
+                            </div>
+                        </div>
+                        <div class="row align-items-center">
+                            <div class="col terms-icon-container">
+                                <img src="img/dress.svg" width="24px" height="24px" alt="no piggy" />
+                            </div>
+                            <div class="col">
+                                anything but no white
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                
+            </div>
+            
+          </div>
+          <div class="col-sm-12 col-md-5 invitation-bg position-relative">
+            <img class="position-absolute top-50 start-0 flower1" src="/img/bunga3.png">
+            <img class="position-absolute top-50 end-0 flower1" src="/img/bunga4.png">
+                <div class="row align-items-center invitation-wrapper">
+                    <div class="col form-style">
+                        <h3>Reservation</h3>
+                        <span>Please do RSVP before october 14th 2022 So that we can arrange accordingly</span>
+                        <form class="pt-3" action="https://sheetdb.io/api/v1/hzcottzyqnxbe" method="post" id="sheetdb-form">
+                            <div class="mb-3">
+                              <label for="name" class="form-label">Name</label>
+                              <input type="text" class="form-control" id="name" name="data[name]" required>
+                              <div class="valid-feedback">
+                                Looks good!
+                              </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="data[status]" id="status" value="Hadir" checked>
+                                    <label class="form-check-label" for="flexRadioDefault1">
+                                        Yes! wouldn’t miss it for the world!
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="data[status]" id="status" value="Tidak">
+                                    <label class="form-check-label" for="flexRadioDefault2">
+                                        Will be celebrating from a far!
+                                    </label>
+                                  </div>
+                            </div>
+                            
+                              
+                              <div class="mb-3 mt-3">
+                                <h5>
+                                    Seat reserved on your name :
+                                </h5>
+                                <label for="Adult" class="form-label">Adult</label>
+                                <select class="form-select" aria-label="Adult" name="data[adult]">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                  </select>
+                              </div>
+                              <div class="mb-3">
+                                <label for="Kids" class="form-label">Kids</label>
+                                <select class="form-select" aria-label="Kids" name="data[kids]">
+                                    <option value="0">No Kids</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                  </select>
+                              </div>
+                            
+                            <div class="d-grid gap-2">
+                                <button class="btn btn-success" type="submit">Send My Reservation</button>
+                            </div>
+                          </form>
+                    </div>
+                    
+                </div>
+                
+          </div>
+        </div>
+      </div>
+
+    <script>
+        var form = document.getElementById('sheetdb-form');
+    form.addEventListener("submit", e => {
+      e.preventDefault();
+      fetch(form.action, {
+          method : "POST",
+          body: new FormData(document.getElementById("sheetdb-form")),
+      }).then(
+          response => response.json()
+      ).then((html) => {
+        // you can put any JS code here
+        window.open('reserv.html', '_blank');
+
+      });
+    });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+  </body>
+</html>
